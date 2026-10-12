@@ -1,0 +1,1031 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b15">
+<title>Legal & Policies | Morihix Private Limited</title>
+<meta name="description" content="Official legal and policy document centre of Morihix Private Limited.">
+
+<style>
+:root {
+  --bg: #071b15;
+  --panel: #0d251c;
+  --green: #a6f0bd;
+  --green-dark: #43b879;
+  --white: #f4faf5;
+  --muted: #91a99a;
+  --border: rgba(184, 235, 198, .13);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 10% 10%, rgba(35, 151, 92, .18), transparent 35%),
+    radial-gradient(ellipse at 90% 45%, rgba(65, 189, 117, .10), transparent 32%);
+}
+
+a { text-decoration: none; color: inherit; }
+
+button, input { font: inherit; }
+
+.container {
+  width: min(1160px, calc(100% - 44px));
+  margin: auto;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--border);
+  background: rgba(7, 27, 21, .78);
+  backdrop-filter: blur(18px);
+}
+
+.nav-inner {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand-symbol {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #b8f5c9, #52c98a);
+  color: #08291b;
+  font-size: 25px;
+  font-weight: 900;
+  box-shadow: 0 0 28px rgba(111, 227, 154, .14);
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -.4px;
+}
+
+.brand-caption {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.nav-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #c1d9c8;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #7ae5a0;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #7ae5a0;
+}
+
+.hero {
+  padding: 90px 0 95px;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--green);
+  border: 1px solid rgba(166, 240, 189, .23);
+  background: rgba(166, 240, 189, .055);
+  border-radius: 30px;
+  padding: 7px 13px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin-top: 27px;
+  font-size: clamp(43px, 6.3vw, 75px);
+  line-height: 1.03;
+  letter-spacing: -4px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: var(--green);
+  display: block;
+}
+
+.hero-copy {
+  max-width: 570px;
+  margin-top: 23px;
+  color: #a9beb0;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 29px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 19px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: #09291a;
+}
+
+.btn-primary:hover {
+  background: #c7f9d3;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  color: var(--white);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.025);
+}
+
+.btn-outline:hover { border-color: var(--green); }
+
+.hero-art {
+  min-height: 330px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.orbit {
+  width: 290px;
+  height: 290px;
+  border: 1px solid rgba(166,240,189,.19);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  box-shadow: 0 0 100px rgba(66, 191, 115, .06);
+}
+
+.orbit::before,
+.orbit::after {
+  content: "";
+  position: absolute;
+  inset: 24px;
+  border: 1px dashed rgba(166,240,189,.20);
+  border-radius: 50%;
+}
+
+.orbit::after {
+  inset: -22px;
+  border-style: solid;
+  opacity: .5;
+}
+
+.shield {
+  width: 148px;
+  height: 165px;
+  background: linear-gradient(145deg, #b8f5c9, #3eb77a);
+  clip-path: polygon(50% 0, 94% 16%, 88% 66%, 72% 84%, 50% 100%, 28% 84%, 12% 66%, 6% 16%);
+  display: grid;
+  place-items: center;
+  color: #0a3420;
+  font-size: 66px;
+  filter: drop-shadow(0 0 24px rgba(107, 231, 151, .17));
+}
+
+.float-tag {
+  position: absolute;
+  padding: 12px 15px;
+  border: 1px solid var(--border);
+  background: rgba(15, 42, 30, .92);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  font-size: 11px;
+  color: #d9f0df;
+  box-shadow: 0 12px 40px rgba(0,0,0,.15);
+}
+
+.float-tag small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  margin-top: 2px;
+}
+
+.tag-one { top: 28px; right: -2px; }
+.tag-two { bottom: 26px; left: -8px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.025);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.stat {
+  padding: 19px 23px;
+  border-right: 1px solid var(--border);
+}
+
+.stat:last-child { border-right: 0; }
+
+.stat strong {
+  display: block;
+  font-size: 22px;
+  color: var(--green);
+  letter-spacing: -.6px;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.directory {
+  padding: 30px 0 90px;
+  scroll-margin-top: 20px;
+}
+
+.section-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 27px;
+}
+
+.section-kicker {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--green);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-top h2 {
+  font-size: clamp(26px, 4vw, 37px);
+  line-height: 1.2;
+  margin-top: 9px;
+  letter-spacing: -1.1px;
+}
+
+.section-top p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 9px;
+}
+
+.doc-count {
+  padding: 8px 12px;
+  border-radius: 9px;
+  background: rgba(166,240,189,.08);
+  border: 1px solid rgba(166,240,189,.16);
+  color: var(--green);
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+
+.search-box {
+  position: relative;
+  flex: 1 1 280px;
+  max-width: 430px;
+}
+
+.search-box span {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.search-box input {
+  width: 100%;
+  height: 46px;
+  padding: 10px 14px 10px 42px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  outline: none;
+  background: #0c231a;
+  color: white;
+  font-size: 12px;
+}
+
+.search-box input:focus { border-color: #63c88b; }
+
+.filters {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  cursor: pointer;
+  padding: 9px 12px;
+  border-radius: 9px;
+  color: #a3b7a9;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 11px;
+  transition: .2s;
+}
+
+.filter:hover,
+.filter.active {
+  background: var(--green);
+  color: #09291a;
+  border-color: var(--green);
+}
+
+.status-line {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.doc-card {
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: linear-gradient(145deg, rgba(17,45,32,.94), rgba(10,31,23,.96));
+  transition: transform .22s, border-color .22s, box-shadow .22s;
+  overflow: hidden;
+}
+
+.doc-card::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: -65px;
+  top: -65px;
+  border: 1px solid rgba(166,240,189,.08);
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px rgba(166,240,189,.025);
+  pointer-events: none;
+}
+
+.doc-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(166,240,189,.43);
+  box-shadow: 0 20px 50px rgba(0,0,0,.17);
+}
+
+.doc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.doc-icon {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: rgba(166,240,189,.09);
+  border: 1px solid rgba(166,240,189,.14);
+  font-size: 22px;
+}
+
+.doc-badge {
+  color: #a6f0bd;
+  background: rgba(166,240,189,.07);
+  border: 1px solid rgba(166,240,189,.12);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 9px;
+  letter-spacing: .7px;
+  font-weight: 800;
+}
+
+.doc-card h3 {
+  font-size: 16px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.doc-card p {
+  color: #91a99a;
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 9px;
+  margin-bottom: 22px;
+  overflow-wrap: anywhere;
+}
+
+.doc-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 13px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.doc-link span:last-child { font-size: 17px; }
+
+.empty {
+  display: none;
+  padding: 50px 15px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+}
+
+.empty strong {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  padding: 27px 29px;
+  margin-top: 45px;
+  border-radius: 16px;
+  border: 1px solid rgba(166,240,189,.17);
+  background: linear-gradient(120deg, rgba(40,123,76,.16), rgba(255,255,255,.025));
+}
+
+.support h3 {
+  font-size: 18px;
+  letter-spacing: -.4px;
+}
+
+.support p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.support a {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  background: rgba(5,19,14,.65);
+}
+
+.footer-inner {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-brand {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.footer p {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: #a8bcad;
+  font-size: 10px;
+}
+
+.footer-links a:hover { color: var(--green); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-art { display: none; }
+  .hero { padding: 70px 0 80px; }
+  .doc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  .container { width: calc(100% - 30px); }
+  .nav-inner { min-height: 72px; }
+  .nav-status { display: none; }
+  .hero { padding: 53px 0 65px; }
+  .hero h1 { letter-spacing: -2px; }
+  .hero-copy { font-size: 13px; }
+  .stats { margin-top: 28px; }
+  .stat { padding: 13px 9px; }
+  .stat strong { font-size: 18px; }
+  .stat span { font-size: 9px; }
+  .section-top { align-items: start; }
+  .doc-grid { grid-template-columns: 1fr; }
+  .doc-card { min-height: 220px; }
+  .toolbar { align-items: stretch; }
+  .search-box { max-width: none; }
+  .filters { gap: 6px; }
+  .filter { padding: 8px 10px; }
+  .support { flex-direction: column; align-items: flex-start; padding: 22px; }
+  .footer-inner { padding: 23px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="./index.html" class="brand">
+      <div class="brand-symbol">M</div>
+      <div>
+        <div class="brand-name">MORIHIX</div>
+        <div class="brand-caption">Private Limited</div>
+      </div>
+    </a>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      Legal &amp; Policy Centre
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span>✳</span> OFFICIAL DOCUMENT CENTRE
+          </div>
+
+          <h1>
+            Clarity in every
+            <span>commitment.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Welcome to the official legal and policy hub of Morihix Private
+            Limited. Explore our policies, understand our terms, and find
+            the information you need in one organised place.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#documents">
+              Explore Documents <span>↘</span>
+            </a>
+            <a class="btn btn-outline" href="mailto:Morihix@gmail.com">
+              Contact Compliance <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit">
+            <div class="shield">✓</div>
+          </div>
+          <div class="float-tag tag-one">
+            Privacy First
+            <small>Responsible data handling</small>
+          </div>
+          <div class="float-tag tag-two">
+            Legal Resources
+            <small>Policies in one place</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <strong id="totalStat">--</strong>
+          <span>Available documents</span>
+        </div>
+        <div class="stat">
+          <strong>01</strong>
+          <span>Centralised directory</span>
+        </div>
+        <div class="stat">
+          <strong>24/7</strong>
+          <span>Online access</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="directory" id="documents">
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <div class="section-kicker">DOCUMENT LIBRARY</div>
+          <h2>Policies &amp; Resources</h2>
+          <p>Find the right document without the extra searching.</p>
+        </div>
+        <div class="doc-count" id="count">Loading...</div>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="search" type="search"
+            placeholder="Search by policy name..."
+            aria-label="Search documents">
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter active" data-type="all">All Documents</button>
+          <button class="filter" data-type="privacy">Privacy</button>
+          <button class="filter" data-type="terms">Terms</button>
+          <button class="filter" data-type="other">Other Policies</button>
+        </div>
+      </div>
+
+      <div class="status-line" id="status" aria-live="polite">
+        Preparing document library...
+      </div>
+
+      <div class="doc-grid" id="grid"></div>
+
+      <div class="empty" id="empty">
+        <strong>No matching documents</strong>
+        Try another search term or choose a different category.
+      </div>
+
+      <div class="support">
+        <div>
+          <h3>Need clarification on a policy?</h3>
+          <p>Our compliance contact is available for policy-related enquiries.</p>
+        </div>
+        <a href="mailto:Morihix@gmail.com">Morihix@gmail.com ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">MORIHIX PRIVATE LIMITED</div>
+      <p>Official Legal &amp; Policy Directory</p>
+    </div>
+    <div class="footer-links">
+      <a href="./privacy-policy.html">Privacy</a>
+      <a href="./terms-and-conditions.html">Terms</a>
+      <a href="mailto:Morihix@gmail.com">Contact</a>
+    </div>
+    <p>© <span id="year"></span> Morihix Private Limited.</p>
+  </div>
+</footer>
+
+<script>
+const fallbackPages = [
+  {
+    file: "privacy-policy.html",
+    title: "Privacy Policy",
+    category: "privacy",
+    description: "Understand how personal information, account details and other data are handled."
+  },
+  {
+    file: "terms-and-conditions.html",
+    title: "Terms & Conditions",
+    category: "terms",
+    description: "Review the terms and rules that govern the use of our platform and services."
+  },
+  {
+    file: "refund-policy.html",
+    title: "Refund Policy",
+    category: "other",
+    description: "Information about applicable refunds, cancellations and payment terms."
+  },
+  {
+    file: "data-deletion.html",
+    title: "Data Deletion Policy",
+    category: "privacy",
+    description: "Learn how to submit a request for deletion of eligible personal data."
+  }
+];
+
+const descriptions = {
+  "privacy-policy.html":
+    "Understand how personal information, account details and other data are handled.",
+  "terms-and-conditions.html":
+    "Review the terms and rules that govern the use of our platform and services.",
+  "refund-policy.html":
+    "Information about applicable refunds, cancellations and payment terms.",
+  "data-deletion.html":
+    "Learn how to submit a request for deletion of eligible personal data."
+};
+
+let pages = [];
+let selectedCategory = "all";
+
+const grid = document.getElementById("grid");
+const empty = document.getElementById("empty");
+const statusText = document.getElementById("status");
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, ch => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[ch]);
+}
+
+function inferCategory(file) {
+  const name = file.toLowerCase();
+
+  if (/privacy|data-protection|data-deletion|cookie/.test(name)) {
+    return "privacy";
+  }
+
+  if (/terms|conditions|agreement|disclaimer/.test(name)) {
+    return "terms";
+  }
+
+  return "other";
+}
+
+function inferTitle(file) {
+  return file.split("/").pop()
+    .replace(/\.html?$/i, "")
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, letter => letter.toUpperCase());
+}
+
+function normalize(item) {
+  if (typeof item === "string") item = { file: item };
+  if (!item || typeof item.file !== "string") return null;
+
+  const file = item.file.trim();
+
+  // Only local HTML files are accepted.
+  if (
+    !/^[a-zA-Z0-9_-][a-zA-Z0-9._/-]*\.html?$/i.test(file) ||
+    file.startsWith("/") ||
+    file.split("/").includes("..")
+  ) return null;
+
+  const filename = file.split("/").pop();
+  const category = ["privacy", "terms", "other"].includes(item.category)
+    ? item.category
+    : inferCategory(filename);
+
+  return {
+    file,
+    title: String(item.title || inferTitle(filename)),
+    category,
+    description: String(
+      item.description ||
+      descriptions[filename] ||
+      "Read this official legal or policy document from Morihix Private Limited."
+    )
+  };
+}
+
+async function loadManifest() {
+  const response = await fetch("./pages.json", { cache: "no-store" });
+  if (!response.ok) throw new Error("Manifest unavailable");
+
+  const data = await response.json();
+  const list = Array.isArray(data) ? data : data.pages;
+
+  if (!Array.isArray(list)) throw new Error("Invalid pages.json");
+
+  return list.map(normalize).filter(Boolean);
+}
+
+async function loadDirectory() {
+  const response = await fetch("./", { cache: "no-store" });
+  if (!response.ok) throw new Error("Directory unavailable");
+
+  const text = await response.text();
+  const doc = new DOMParser().parseFromString(text, "text/html");
+
+  const files = [...doc.querySelectorAll("a[href]")]
+    .map(a => a.getAttribute("href"))
+    .filter(href =>
+      href &&
+      /\.html?$/i.test(href) &&
+      !/^(https?:|\/\/|#)/i.test(href)
+    )
+    .filter(href => !/^index\.html?$/i.test(href.split("/").pop()));
+
+  if (!files.length) throw new Error("No files in directory listing");
+
+  return files.map(normalize).filter(Boolean);
+}
+
+async function discoverPages() {
+  let source = "fallback";
+  let discovered = [];
+
+  try {
+    discovered = await loadManifest();
+    source = "manifest";
+
+    // Include newly added files if server directory listing is enabled.
+    try {
+      const extra = await loadDirectory();
+      const known = new Set(discovered.map(page => page.file));
+
+      extra.forEach(page => {
+        if (!known.has(page.file)) {
+          discovered.push(page);
+          known.add(page.file);
+        }
+      });
+    } catch (_) {}
+  } catch (_) {
+    try {
+      discovered = await loadDirectory();
+      source = "directory";
+    } catch (_) {
+      discovered = fallbackPages.map(normalize).filter(Boolean);
+    }
+  }
+
+  const unique = new Map();
+
+  discovered.forEach(page => {
+    if (page && !/^index\.html?$/i.test(page.file.split("/").pop())) {
+      unique.set(page.file, page);
+    }
+  });
+
+  pages = [...unique.values()].sort((a, b) =>
+    a.title.localeCompare(b.title)
+  );
+
+  render();
+
+  if (source === "manifest") {
+    statusText.textContent = "Documents loaded from the policy manifest.";
+  } else if (source === "directory") {
+    statusText.textContent = "Documents discovered from server directory listing.";
+  } else {
+    statusText.textContent =
+      "Showing fallback documents. Add pages.json for reliable automatic listing.";
+  }
+}
+
+function iconFor(category) {
+  if (category === "privacy") return "◈";
+  if (category === "terms") return "§";
+  return "▤";
+}
+
+function categoryLabel(category) {
+  if (category === "privacy") return "PRIVACY";
+  if (category === "terms") return "LEGAL TERMS";
+  return "POLICY";
+}
+
+function render() {
+  const query = document.getElementById("search").value
+    .trim().toLowerCase();
+
+  const visible = pages.filter(page => {
+    const categoryMatch =
+      selectedCategory === "all" ||
+      page.category === selectedCategory;
+
+    const searchMatch =
+      `${page.title} ${page.file} ${page.description}`
+        .toLowerCase().includes(query);
+
+    return categoryMatch && searchMatch;
+  });
+
+  document.getElementById("count").textContent =
+    `${visible.length} DOCUMENT${visible.length === 1 ? "" : "S"}`;
+
+  document.getElementById("totalStat").textContent = pages.length;
+
+  grid.innerHTML = visible.map(page => `
+    <a class="doc-card" href="${escapeHTML(page.file)}">
+      <div class="doc-top">
+        <div class="doc-icon" aria-hidden="true">${iconFor(page.category)}</div>
+        <span class="doc-badge">${categoryLabel(page.category)}</span>
+      </div>
+      <h3>${escapeHTML(page.title)}</h3>
+      <p>${escapeHTML(page.description)}</p>
+      <div class="doc-link">
+        <span>OPEN DOCUMENT</span>
+        <span aria-hidden="true">↗</span>
+      </div>
+    </a>
+  `).join("");
+
+  empty.style.display = visible.length ? "none" : "block";
+  grid.style.display = visible.length ? "grid" : "none";
+}
+
+document.getElementById("search").addEventListener("input", render);
+
+document.getElementById("filters").addEventListener("click", event => {
+  const button = event.target.closest("button[data-type]");
+  if (!button) return;
+
+  selectedCategory = button.dataset.type;
+
+  document.querySelectorAll(".filter").forEach(item => {
+    item.classList.toggle("active", item === button);
+  });
+
+  render();
+});
+
+discoverPages();
+</script>
+
+</body>
+</html>
