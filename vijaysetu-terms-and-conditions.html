@@ -1,0 +1,1008 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms and Conditions for VijaySetu Election Portal, including election campaign management, voter information slips, WhatsApp messaging, account security and acceptable use.">
+  <meta name="theme-color" content="#075e49">
+  <title>Terms &amp; Conditions | VijaySetu Election Portal</title>
+
+  <style>
+    :root {
+      --primary: #087653;
+      --dark: #064c39;
+      --light: #e9f7f0;
+      --text: #26372e;
+      --muted: #68776f;
+      --border: #e2eae5;
+      --background: #f5f8f6;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 60px 20px 82px;
+      color: var(--white);
+      background: linear-gradient(135deg, #063d2f, #087653 65%, #159568);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      right: -90px;
+      top: -170px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%;
+      box-shadow: 0 0 0 35px rgba(255,255,255,.035),
+                  0 0 0 70px rgba(255,255,255,.025);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .brand-icon {
+      width: 47px;
+      height: 47px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      color: var(--dark);
+      border-radius: 12px;
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .brand-name {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -.5px;
+      line-height: 1.3;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 4px;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: .8;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 12px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 30px;
+      background: rgba(255,255,255,.1);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.2;
+      letter-spacing: -1.4px;
+      margin-bottom: 18px;
+    }
+
+    .hero-description {
+      max-width: 760px;
+      font-size: 15px;
+      color: rgba(255,255,255,.86);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 25px;
+      margin-top: 24px;
+      font-size: 13px;
+      color: rgba(255,255,255,.9);
+    }
+
+    .page-wrap {
+      max-width: 1000px;
+      margin: -35px auto 0;
+      padding: 0 20px 45px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .notice {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 22px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 28px rgba(22,60,42,.05);
+    }
+
+    .notice-icon {
+      flex: 0 0 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      background: var(--light);
+      border-radius: 12px;
+      font-size: 22px;
+    }
+
+    .notice h2 {
+      color: var(--dark);
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .notice p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      align-items: start;
+      gap: 24px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 20px;
+      padding: 20px 15px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: var(--white);
+    }
+
+    .toc h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin: 0 10px 13px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: #52635a;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .toc a:hover {
+      background: var(--light);
+      color: var(--dark);
+      text-decoration: none;
+    }
+
+    .content {
+      min-width: 0;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 34px;
+      box-shadow: 0 5px 25px rgba(22,60,42,.035);
+    }
+
+    .intro {
+      color: #52635a;
+      margin-bottom: 27px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      scroll-margin-top: 20px;
+    }
+
+    .section:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .number {
+      flex: 0 0 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      background: var(--light);
+      color: var(--primary);
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .section h2 {
+      color: #173d2e;
+      font-size: 18px;
+      line-height: 1.55;
+      letter-spacing: -.2px;
+    }
+
+    .section p {
+      margin-bottom: 12px;
+      color: #46564d;
+    }
+
+    .section ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    .section li {
+      padding-left: 4px;
+      margin-bottom: 10px;
+      color: #46564d;
+    }
+
+    .section li::marker {
+      color: var(--primary);
+    }
+
+    .section strong {
+      color: #243c30;
+    }
+
+    .highlight {
+      padding: 16px 18px;
+      margin: 17px 0;
+      background: #f0f8f3;
+      border-left: 4px solid var(--primary);
+      border-radius: 9px;
+    }
+
+    .highlight p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .contact-card {
+      padding: 22px;
+      margin-top: 16px;
+      border: 1px solid #d9eee1;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0faf4, #fff);
+    }
+
+    .contact-card h3 {
+      font-size: 17px;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+
+    .contact-row {
+      margin: 8px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-row strong {
+      display: inline-block;
+      min-width: 185px;
+    }
+
+    .footer {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 20px 35px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-line {
+      border-top: 1px solid var(--border);
+      padding-top: 22px;
+    }
+
+    .footer-brand {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 5px;
+    }
+
+    .back-top {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 8px 15px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fff;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding: 40px 20px 65px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .page-wrap {
+        padding: 0 13px 30px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .toc {
+        position: static;
+        padding: 16px;
+      }
+
+      .toc-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px;
+      }
+
+      .content {
+        padding: 23px 19px;
+      }
+
+      .section h2 {
+        font-size: 17px;
+      }
+
+      .section p,
+      .section li {
+        font-size: 14px;
+      }
+
+      .contact-row strong {
+        display: block;
+        min-width: 0;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 25px;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .page-wrap {
+        margin: 20px auto;
+        padding: 0;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      .toc,
+      .back-top {
+        display: none;
+      }
+
+      .content,
+      .notice {
+        box-shadow: none;
+      }
+
+      .section {
+        break-inside: avoid;
+      }
+
+      .footer {
+        padding-bottom: 0;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <header class="hero">
+    <div class="hero-inner">
+
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">V</div>
+        <div>
+          <div class="brand-name">VijaySetu</div>
+          <span class="brand-subtitle">Election Portal</span>
+        </div>
+      </div>
+
+      <div class="eyebrow">Legal Information</div>
+
+      <h1>Terms &amp; Conditions</h1>
+
+      <p class="hero-description">
+        Candidate Campaign Management, Voter Information Slip Dispatch
+        &amp; Meta WhatsApp Business Platform
+      </p>
+
+      <div class="hero-meta">
+        <span>Effective Date: October 10, 2026</span>
+        <span>Last Updated: October 2026</span>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="notice">
+      <div class="notice-icon" aria-hidden="true">⚖️</div>
+      <div>
+        <h2>Important Legal Information</h2>
+        <p>
+          These Terms &amp; Conditions govern access to and use of the
+          VijaySetu Election Portal. Please read them carefully before
+          accessing or using the platform. By accessing or using the
+          services, you agree to these terms, subject to applicable law.
+        </p>
+      </div>
+    </div>
+
+    <div class="layout">
+
+      <aside class="toc">
+        <h2>On this page</h2>
+        <nav class="toc-links">
+          <a href="#s1">01. Acceptance of Terms</a>
+          <a href="#s2">02. Services Overview</a>
+          <a href="#s3">03. Eligibility &amp; Accounts</a>
+          <a href="#s4">04. User Responsibilities</a>
+          <a href="#s5">05. Voter Data &amp; Privacy</a>
+          <a href="#s6">06. WhatsApp Messaging</a>
+          <a href="#s7">07. Election Compliance</a>
+          <a href="#s8">08. Prohibited Activities</a>
+          <a href="#s9">09. Service Availability</a>
+          <a href="#s10">10. Third-Party Services</a>
+          <a href="#s11">11. Intellectual Property</a>
+          <a href="#s12">12. Disclaimer &amp; Liability</a>
+          <a href="#s13">13. Suspension &amp; Termination</a>
+          <a href="#s14">14. Changes to Terms</a>
+          <a href="#s15">15. Governing Law</a>
+          <a href="#s16">16. Contact Information</a>
+        </nav>
+      </aside>
+
+      <article class="content">
+
+        <p class="intro">
+          Welcome to VijaySetu Election Portal ("VijaySetu", "we", "us",
+          or "our"). These Terms &amp; Conditions apply to the platform and
+          its related services, including campaign management, voter
+          information slip generation, campaign coordination and WhatsApp
+          message delivery. The platform may be used only for lawful
+          purposes and in accordance with these terms.
+        </p>
+
+        <section class="section" id="s1">
+          <div class="section-heading">
+            <div class="number">01</div>
+            <h2>Acceptance of Terms</h2>
+          </div>
+          <p>
+            By accessing, registering for, or using VijaySetu, you
+            acknowledge that you have read and understood these Terms
+            &amp; Conditions and agree to comply with them.
+          </p>
+          <ul>
+            <li>If you do not agree to these terms, do not use the platform.</li>
+            <li>
+              If you use VijaySetu on behalf of a candidate, campaign,
+              organization or other entity, you confirm that you are
+              authorized to act on its behalf.
+            </li>
+            <li>
+              Additional service-specific terms may apply to particular
+              features or subscriptions.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="s2">
+          <div class="section-heading">
+            <div class="number">02</div>
+            <h2>Services Overview</h2>
+          </div>
+          <p>VijaySetu may provide the following services:</p>
+          <ul>
+            <li>Candidate and campaign team management.</li>
+            <li>Voter record organization and authorized voter search.</li>
+            <li>Generation of digital voter information slips (parchi).</li>
+            <li>Booth-level volunteer coordination and campaign tracking.</li>
+            <li>WhatsApp message dispatch through the Meta WhatsApp Business Platform.</li>
+            <li>Message delivery status and operational reporting.</li>
+          </ul>
+          <p>
+            Features may depend on the user's subscription, permissions,
+            configuration and the availability of connected services.
+            We may modify or discontinue features subject to applicable law
+            and any contractual commitments.
+          </p>
+        </section>
+
+        <section class="section" id="s3">
+          <div class="section-heading">
+            <div class="number">03</div>
+            <h2>Eligibility &amp; Account Security</h2>
+          </div>
+          <ul>
+            <li>
+              Users must have the legal capacity and authority required to
+              use the platform and perform their assigned activities.
+            </li>
+            <li>
+              Account registration information must be accurate and kept
+              reasonably up to date.
+            </li>
+            <li>
+              Users must keep passwords, login credentials, API tokens and
+              other authentication information confidential.
+            </li>
+            <li>
+              Account access must be limited to authorized individuals
+              and managed according to their assigned roles.
+            </li>
+            <li>
+              Users must promptly report suspected unauthorized access or
+              account compromise to the platform administrator.
+            </li>
+          </ul>
+          <p>
+            Users are responsible for activities performed through their
+            accounts to the extent permitted by applicable law.
+          </p>
+        </section>
+
+        <section class="section" id="s4">
+          <div class="section-heading">
+            <div class="number">04</div>
+            <h2>User Responsibilities</h2>
+          </div>
+          <p>When using VijaySetu, you agree to:</p>
+          <ul>
+            <li>Provide accurate information when registering or using services.</li>
+            <li>
+              Use voter information only for lawful, authorized and
+              disclosed purposes.
+            </li>
+            <li>
+              Obtain all required permissions, notices and consents before
+              uploading personal information or initiating communications.
+            </li>
+            <li>
+              Ensure that campaign materials, candidate details and
+              announcements are accurate and not misleading.
+            </li>
+            <li>
+              Respect the rights and privacy of voters, candidates,
+              volunteers and other individuals.
+            </li>
+            <li>
+              Follow applicable laws, election directions and platform
+              policies when conducting campaign activities.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="s5">
+          <div class="section-heading">
+            <div class="number">05</div>
+            <h2>Voter Data &amp; Privacy</h2>
+          </div>
+          <p>
+            VijaySetu may process voter details, account information,
+            recipient contact numbers and messaging metadata to provide
+            the services described in its Privacy Policy.
+          </p>
+          <ul>
+            <li>
+              Users must have a lawful basis and any required authorization
+              to collect, upload, access or use personal data.
+            </li>
+            <li>
+              Public availability of electoral information does not remove
+              the obligation to use it lawfully and responsibly.
+            </li>
+            <li>
+              Users must not disclose, sell, misuse or repurpose voter
+              information in ways that violate applicable law or privacy rights.
+            </li>
+            <li>
+              Requests concerning access, correction or deletion of data
+              will be handled in accordance with applicable law and the
+              platform's Privacy Policy.
+            </li>
+          </ul>
+          <div class="highlight">
+            <p>
+              <strong>Privacy Policy:</strong> These terms should be read
+              together with the VijaySetu Privacy Policy, which describes
+              how information is collected, used, stored and managed.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="s6">
+          <div class="section-heading">
+            <div class="number">06</div>
+            <h2>Meta WhatsApp Business Platform &amp; Messaging</h2>
+          </div>
+          <p>
+            WhatsApp messaging features depend on Meta's services, account
+            approvals, messaging limits and applicable WhatsApp Business
+            policies.
+          </p>
+          <ul>
+            <li>
+              Users must comply with applicable Meta WhatsApp Business
+              Messaging Policies and template requirements.
+            </li>
+            <li>
+              Users must obtain valid opt-in or other required permission
+              before sending messages and maintain appropriate consent records.
+            </li>
+            <li>
+              Users must honor opt-out requests and stop further messages
+              where required by recipient preferences or applicable policy.
+            </li>
+            <li>
+              Message templates, business accounts and messaging quality
+              are subject to Meta's review and controls.
+            </li>
+            <li>
+              Delivery, read receipts and availability may be affected by
+              recipients' devices, network conditions, Meta systems or
+              other external factors.
+            </li>
+          </ul>
+          <p>
+            VijaySetu does not guarantee that every message will be sent,
+            delivered or read. Users must not use messaging functionality
+            for spam, harassment, deception or unauthorized bulk messaging.
+          </p>
+        </section>
+
+        <section class="section" id="s7">
+          <div class="section-heading">
+            <div class="number">07</div>
+            <h2>Election Law &amp; Regulatory Compliance</h2>
+          </div>
+          <p>
+            Users are responsible for ensuring that their use of VijaySetu
+            complies with applicable Indian laws, Election Commission of
+            India directions, the Model Code of Conduct and other relevant
+            election requirements.
+          </p>
+          <ul>
+            <li>
+              The platform does not authorize conduct prohibited by election
+              law or instructions issued by a competent authority.
+            </li>
+            <li>
+              Users must independently verify campaign content, voter
+              information and any election-related instructions.
+            </li>
+            <li>
+              Users must obtain any permissions required for campaign
+              communications, data processing or election-related activities.
+            </li>
+          </ul>
+          <p>
+            Use of VijaySetu does not constitute approval, certification
+            or endorsement by the Election Commission of India, Meta
+            Platforms, Inc. or any government authority.
+          </p>
+        </section>
+
+        <section class="section" id="s8">
+          <div class="section-heading">
+            <div class="number">08</div>
+            <h2>Prohibited Activities</h2>
+          </div>
+          <p>You must not use VijaySetu to:</p>
+          <ul>
+            <li>Break applicable laws, regulations or official election directions.</li>
+            <li>
+              Send unsolicited messages, spam, fraudulent content or
+              deceptive communications.
+            </li>
+            <li>
+              Access, collect, disclose or use voter data without proper
+              authorization or a lawful basis.
+            </li>
+            <li>
+              Impersonate a candidate, election official, organization
+              or another person.
+            </li>
+            <li>
+              Attempt to bypass security controls, interfere with the
+              platform, or access another user's account without permission.
+            </li>
+            <li>
+              Upload malicious code, disrupt services or attempt
+              unauthorized access to connected systems.
+            </li>
+            <li>
+              Resell or commercially exploit platform access or data
+              without written authorization.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="s9">
+          <div class="section-heading">
+            <div class="number">09</div>
+            <h2>Service Availability &amp; Technical Limitations</h2>
+          </div>
+          <p>
+            We aim to provide a reliable service, but uninterrupted
+            availability cannot be guaranteed.
+          </p>
+          <ul>
+            <li>
+              Maintenance, software updates, connectivity problems or
+              third-party outages may affect service availability.
+            </li>
+            <li>
+              Integrations may be restricted, suspended or changed by
+              their respective providers.
+            </li>
+            <li>
+              Users are responsible for maintaining suitable devices,
+              internet connectivity and compatible software.
+            </li>
+          </ul>
+          <p>
+            Where reasonably practicable, we may provide notice of planned
+            maintenance or material service changes.
+          </p>
+        </section>
+
+        <section class="section" id="s10">
+          <div class="section-heading">
+            <div class="number">10</div>
+            <h2>Third-Party Services</h2>
+          </div>
+          <p>
+            VijaySetu may integrate with third-party services, including
+            Meta WhatsApp Business Platform, hosting providers and other
+            technology services.
+          </p>
+          <p>
+            These services may have their own terms, policies, eligibility
+            requirements and availability restrictions. Your use of those
+            services may be governed by their applicable terms. VijaySetu
+            is not responsible for independent third-party actions or
+            outages except to the extent required by applicable law.
+          </p>
+        </section>
+
+        <section class="section" id="s11">
+          <div class="section-heading">
+            <div class="number">11</div>
+            <h2>Intellectual Property</h2>
+          </div>
+          <p>
+            Unless otherwise stated, the VijaySetu platform, its software,
+            design, branding, interface and original content are owned by
+            or licensed to their respective rights holders.
+          </p>
+          <ul>
+            <li>
+              Users receive a limited, non-exclusive and revocable right
+              to access the platform for its intended lawful purposes,
+              subject to these terms.
+            </li>
+            <li>
+              Users must not copy, modify, reverse engineer, redistribute
+              or commercially exploit protected platform components except
+              where permitted by law or expressly authorized.
+            </li>
+            <li>
+              Users retain responsibility for ensuring they have the rights
+              necessary to upload campaign materials, photographs, logos
+              and other content.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="s12">
+          <div class="section-heading">
+            <div class="number">12</div>
+            <h2>Disclaimer &amp; Limitation of Liability</h2>
+          </div>
+          <p>
+            VijaySetu provides digital tools for campaign administration,
+            voter information slip generation and communication management.
+            The platform is not a government election authority and does
+            not independently certify the accuracy of every voter record
+            or external data source.
+          </p>
+          <ul>
+            <li>
+              Users should verify important election information against
+              appropriate official sources.
+            </li>
+            <li>
+              We do not guarantee election outcomes, message delivery,
+              uninterrupted availability or error-free operation.
+            </li>
+            <li>
+              To the extent permitted by law, VijaySetu will not be liable
+              for indirect or consequential losses arising from use of the
+              platform, third-party service interruptions or user-supplied
+              inaccurate information.
+            </li>
+          </ul>
+          <p>
+            Nothing in these terms excludes or limits liability where such
+            exclusion or limitation is prohibited by applicable law,
+            including any rights or remedies that cannot lawfully be waived.
+          </p>
+        </section>
+
+        <section class="section" id="s13">
+          <div class="section-heading">
+            <div class="number">13</div>
+            <h2>Suspension &amp; Termination</h2>
+          </div>
+          <p>
+            Access may be suspended or terminated where reasonably
+            necessary to protect the platform, its users, personal data
+            or compliance with applicable law.
+          </p>
+          <p>Reasons may include:</p>
+          <ul>
+            <li>Material violation of these Terms &amp; Conditions.</li>
+            <li>Unauthorized use of accounts or sensitive information.</li>
+            <li>Fraud, abuse, unlawful messaging or security threats.</li>
+            <li>Directions from a competent authority or service provider.</li>
+          </ul>
+          <p>
+            Subject to applicable law and legitimate security requirements,
+            users may contact the administrator regarding account closure
+            and applicable data deletion requests.
+          </p>
+        </section>
+
+        <section class="section" id="s14">
+          <div class="section-heading">
+            <div class="number">14</div>
+            <h2>Changes to These Terms</h2>
+          </div>
+          <p>
+            We may revise these Terms &amp; Conditions to reflect changes
+            in our services, security practices, third-party integrations
+            or applicable legal requirements.
+          </p>
+          <p>
+            The revised version will be published on the relevant platform
+            page with an updated date where appropriate. Where required by
+            law, we will provide notice or obtain any necessary consent.
+            Continued use after revised terms become effective will be
+            subject to applicable legal requirements.
+          </p>
+        </section>
+
+        <section class="section" id="s15">
+          <div class="section-heading">
+            <div class="number">15</div>
+            <h2>Governing Law &amp; Dispute Resolution</h2>
+          </div>
+          <p>
+            These Terms &amp; Conditions are governed by the applicable
+            laws of India, subject to mandatory legal protections and
+            jurisdictional requirements.
+          </p>
+          <p>
+            Users are encouraged to contact the VijaySetu Compliance Team
+            first to attempt to resolve concerns informally. Nothing in
+            these terms prevents a person from exercising a statutory
+            right or approaching a competent authority or court.
+          </p>
+        </section>
+
+        <section class="section" id="s16">
+          <div class="section-heading">
+            <div class="number">16</div>
+            <h2>Contact Information &amp; Grievances</h2>
+          </div>
+          <p>
+            For questions, complaints, terms-related concerns or privacy
+            requests regarding VijaySetu, please contact:
+          </p>
+
+          <div class="contact-card">
+            <h3>VijaySetu Compliance Team</h3>
+            <div class="contact-row">
+              <strong>Platform:</strong> VijaySetu Election Portal
+            </div>
+            <div class="contact-row">
+              <strong>Email:</strong>
+              <a href="mailto:Morihix@gmail.com">Morihix@gmail.com</a>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-line">
+      <div class="footer-brand">VijaySetu Election Portal</div>
+      <p>© 2026 VijaySetu. All Rights Reserved.</p>
+      <a href="#top" class="back-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+</body>
+</html>
