@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#102c52">
+
+<title>Privacy Policy | Janhit Seva</title>
+<meta name="description" content="Read the Privacy Policy of Janhit Seva Sansthan. Learn how we collect, use, protect and manage your personal information.">
+
+<style>
+:root {
+  --navy: #102c52;
+  --blue: #1d4ed8;
+  --gold: #d8ad52;
+  --ink: #24334a;
+  --muted: #65748b;
+  --bg: #f4f7fc;
+  --white: #ffffff;
+  --line: #e5ebf3;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Arial, sans-serif;
+  line-height: 1.8;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.topbar {
+  background: var(--navy);
+  color: white;
+  padding: 12px 6%;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.topbar span { opacity: .9; }
+
+header {
+  background: white;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  max-width: 1180px;
+  margin: auto;
+  padding: 15px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--navy);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+  border: 1px solid #e9d39c;
+}
+
+.brand small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.nav a:last-child {
+  color: var(--navy);
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.hero {
+  background: linear-gradient(130deg, #102c52, #17477b);
+  color: white;
+  padding: 76px 24px 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border: 1px solid #ffffff18;
+  border-radius: 50%;
+  right: -70px;
+  top: -130px;
+  box-shadow: 0 0 0 45px #ffffff08,
+              0 0 0 90px #ffffff05;
+}
+
+.hero-inner {
+  max-width: 1050px;
+  margin: auto;
+  position: relative;
+}
+
+.eyebrow {
+  display: inline-block;
+  border: 1px solid #ffffff40;
+  border-radius: 30px;
+  padding: 5px 14px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #f1d99d;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 57px);
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+  margin: 22px 0 16px;
+}
+
+.hero p {
+  color: #d8e3f2;
+  max-width: 650px;
+  font-size: 16px;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #e6edf8;
+}
+
+.hero-meta strong { color: #f1d99d; }
+
+.container {
+  max-width: 1180px;
+  margin: -35px auto 60px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 265px minmax(0, 1fr);
+  gap: 25px;
+  align-items: start;
+  position: relative;
+}
+
+.sidebar, .content {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 30px #102c5208;
+}
+
+.sidebar {
+  padding: 22px 16px;
+  position: sticky;
+  top: 95px;
+}
+
+.sidebar h3 {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin: 0 10px 14px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 9px 11px;
+  border-radius: 8px;
+  color: #4a5a70;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.sidebar a:hover {
+  background: #edf4ff;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.content {
+  padding: clamp(22px, 4vw, 48px);
+  min-width: 0;
+}
+
+.intro {
+  background: #f1f6ff;
+  border: 1px solid #dce8fb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 34px;
+}
+
+.intro strong { color: var(--navy); }
+
+section {
+  padding: 8px 0 23px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 100px;
+}
+
+section:last-of-type { border-bottom: none; }
+
+h2 {
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--navy);
+  margin: 0 0 14px;
+  letter-spacing: -.35px;
+}
+
+h2 .number {
+  color: var(--blue);
+  margin-right: 8px;
+}
+
+h3 {
+  color: var(--navy);
+  font-size: 16px;
+  margin: 18px 0 7px;
+}
+
+p { margin: 9px 0 13px; }
+
+ul {
+  padding-left: 22px;
+  margin: 10px 0 16px;
+}
+
+li { padding: 3px 0; }
+
+.notice {
+  border-left: 4px solid var(--gold);
+  background: #fffbf0;
+  padding: 15px 18px;
+  border-radius: 0 10px 10px 0;
+  margin: 18px 0;
+  font-size: 14px;
+}
+
+.contact-card {
+  background: var(--navy);
+  color: white;
+  padding: 26px;
+  border-radius: 14px;
+  margin-top: 15px;
+}
+
+.contact-card h3 { color: #f1d99d; margin-top: 0; }
+.contact-card p { color: #e0e9f5; }
+.contact-card a { color: #f5d783; overflow-wrap: anywhere; }
+
+footer {
+  background: #0b203b;
+  color: #c4d0df;
+  padding: 35px 24px;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer strong { color: white; }
+footer p { margin: 5px 0; }
+
+.backtop {
+  display: inline-block;
+  margin-top: 15px;
+  color: #f1d99d;
+}
+
+@media(max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: -30px;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
+  }
+
+  .hero { padding-top: 55px; }
+}
+
+@media(max-width: 480px) {
+  .nav { padding: 12px 16px; }
+  .brand { font-size: 17px; }
+  .logo { width: 40px; height: 40px; }
+  .container { padding: 0 12px; gap: 14px; }
+  .content { padding: 22px 18px; }
+  .hero { padding-left: 19px; padding-right: 19px; }
+  .sidebar nav { grid-template-columns: 1fr; }
+  .hero-meta { gap: 10px 18px; }
+}
+</style>
+</head>
+
+<body id="top">
+
+<div class="topbar">
+  <span>JANHIT SEVA SANSTHAN</span>
+  <span>Privacy • Transparency • Trust</span>
+</div>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="brand">
+      <div class="logo" aria-hidden="true">JS</div>
+      <div>
+        Janhit Seva
+        <small>JANHIT SEVA SANSTHAN</small>
+      </div>
+    </a>
+    <a href="#contact">Contact Us ↗</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Your Privacy Matters</span>
+    <h1>Privacy Policy</h1>
+    <p>
+      Your trust matters to us. This policy explains how Janhit Seva
+      Sansthan handles personal information when you use our mobile
+      application, website and related community services.
+    </p>
+    <div class="hero-meta">
+      <span><strong>Effective:</strong> 13 October 2026</span>
+      <span><strong>Region:</strong> India</span>
+      <span><strong>Applies to:</strong> Janhit Seva</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h3>On this page</h3>
+    <nav aria-label="Privacy policy contents">
+      <a href="#introduction">1. Introduction</a>
+      <a href="#information">2. Information We Collect</a>
+      <a href="#permissions">3. App Permissions</a>
+      <a href="#usage">4. How We Use Data</a>
+      <a href="#sharing">5. Data Sharing</a>
+      <a href="#security">6. Data Security</a>
+      <a href="#retention">7. Retention & Deletion</a>
+      <a href="#rights">8. Your Privacy Rights</a>
+      <a href="#children">9. Children's Privacy</a>
+      <a href="#thirdparty">10. Third-Party Services</a>
+      <a href="#transfers">11. Data Transfers</a>
+      <a href="#changes">12. Policy Changes</a>
+      <a href="#contact">13. Contact Us</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+
+    <div class="intro">
+      <strong>Please read this policy carefully.</strong>
+      <p>
+        By using Janhit Seva, you acknowledge that you have had the
+        opportunity to read this Privacy Policy. Where consent is
+        legally required, we will obtain it before processing your
+        information for the relevant purpose.
+      </p>
+      This policy should be read together with any privacy notice
+      presented when you use a particular feature.
+    </div>
+
+    <section id="introduction">
+      <h2><span class="number">01.</span> Introduction</h2>
+      <p>
+        Janhit Seva ("we", "our", "us") refers to Janhit Seva Sansthan
+        and the team responsible for operating the Janhit Seva mobile
+        application and related services.
+      </p>
+      <p>
+        Our platform may provide social-work updates, public notices,
+        information about welfare initiatives, community activities,
+        scheme information, and help or contact services.
+      </p>
+      <p>
+        This Privacy Policy describes how information may be collected,
+        used, stored, disclosed and deleted when you interact with our
+        services.
+      </p>
+      <p>
+        We aim to handle information in accordance with applicable
+        Indian data-protection laws, Google Play policies and Apple
+        App Store requirements.
+      </p>
+    </section>
+
+    <section id="information">
+      <h2><span class="number">02.</span> Information We Collect</h2>
+      <p>
+        The information we process depends on the features you use
+        and the information you choose to provide. We do not intend
+        to collect information that is unnecessary for the relevant
+        service.
+      </p>
+
+      <h3>A. Personal and Contact Information</h3>
+      <p>Where a feature requires it, we may collect:</p>
+      <ul>
+        <li>Name and mobile number.</li>
+        <li>Email address and contact details, if provided.</li>
+        <li>Address or general location details entered by you.</li>
+        <li>Profile information and profile photograph, if you choose to upload one.</li>
+      </ul>
+
+      <h3>B. Applications and Submitted Documents</h3>
+      <p>
+        If you apply for an available welfare scheme, assistance
+        programme or other service, we may process the information
+        and supporting documents you submit, such as identity or
+        eligibility documents, where required for that specific
+        application.
+      </p>
+      <p>
+        Certain services may involve marriage assistance, Mayara
+        Yojana, Suraksha Sahyog Yojana or Mangal Shishu Sahyog Yojana.
+        Information will be requested only where relevant to a
+        service that is actually offered.
+      </p>
+
+      <h3>C. Technical Information</h3>
+      <p>
+        Depending on our implemented technology and configuration,
+        we or our service providers may process technical information
+        such as device type, operating system, app version, diagnostic
+        reports, crash logs, approximate network information and
+        service usage events.
+      </p>
+
+      <h3>D. Information You Send Us</h3>
+      <p>
+        We may retain enquiries, feedback, complaints and other
+        communications you voluntarily send to our support team.
+      </p>
+
+      <div class="notice">
+        We do not claim to collect every category listed above in
+        every version of the app. Actual collection depends on the
+        features enabled and the permissions granted by you.
+      </div>
+    </section>
+
+    <section id="permissions">
+      <h2><span class="number">03.</span> App Permissions</h2>
+      <p>
+        Janhit Seva may request certain device permissions when
+        needed for an optional feature. Your device will display
+        the applicable permission request.
+      </p>
+
+      <h3>Photos and Media</h3>
+      <p>
+        Access may be requested so you can select and upload a
+        profile photograph or a document required for a service.
+        We should access only the files necessary for the action
+        you choose, using platform-supported access methods where
+        available.
+      </p>
+
+      <h3>Camera</h3>
+      <p>
+        If camera functionality is implemented, permission may be
+        requested to take a profile photograph or capture a
+        supporting document.
+      </p>
+
+      <h3>Notifications</h3>
+      <p>
+        If enabled, notifications may be used for important notices,
+        application updates, service announcements or other relevant
+        information.
+      </p>
+
+      <h3>Internet Access</h3>
+      <p>
+        Network access may be used to load content, submit information
+        you request, retrieve updates and operate online features.
+      </p>
+
+      <p>
+        We do not intend to access your camera, photos or other
+        protected device information for unrelated purposes.
+        You can manage available permissions through your device
+        settings. Some features may not work if the relevant
+        permission is denied.
+      </p>
+    </section>
+
+    <section id="usage">
+      <h2><span class="number">04.</span> How We Use Information</h2>
+      <p>Depending on the features you use, information may be used to:</p>
+      <ul>
+        <li>Create and manage your account, where accounts are supported.</li>
+        <li>Display your profile and user-selected information.</li>
+        <li>Process requests, applications and enquiries submitted by you.</li>
+        <li>Provide information about welfare schemes and community initiatives.</li>
+        <li>Send relevant service notifications and important announcements.</li>
+        <li>Respond to support requests and resolve technical problems.</li>
+        <li>Maintain service reliability, prevent fraud and protect platform security.</li>
+        <li>Meet applicable legal obligations and respond to lawful requests.</li>
+        <li>Improve usability and performance using permitted diagnostic or analytics information, if implemented.</li>
+      </ul>
+      <p>
+        We will not use personal information for a materially
+        different purpose without an appropriate legal basis and,
+        where required, additional notice or consent.
+      </p>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="number">05.</span> Sharing of Information</h2>
+      <p>
+        We do not sell your personal information to third parties.
+        We may disclose information only when reasonably necessary
+        for the purposes described in this policy or as permitted
+        or required by law.
+      </p>
+
+      <h3>Service Providers</h3>
+      <p>
+        If integrated into the app, hosting providers, authentication
+        providers, cloud storage services, notification services,
+        analytics tools or crash-reporting providers may process
+        relevant information on our behalf.
+      </p>
+
+      <h3>Service Delivery</h3>
+      <p>
+        Information may be shared with authorised personnel or
+        organisations involved in delivering a service or assessing
+        an application, where necessary and legally permitted.
+      </p>
+
+      <h3>Legal and Security Reasons</h3>
+      <p>
+        Information may be disclosed where required by applicable
+        law, a valid legal process, or to address security incidents,
+        fraud or the protection of rights and safety.
+      </p>
+
+      <p>
+        Any third-party integrations actually used by the app should
+        be disclosed accurately. We expect service providers handling
+        personal information on our behalf to protect it appropriately.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2><span class="number">06.</span> Data Security</h2>
+      <p>
+        We aim to protect personal information through appropriate
+        technical and organisational safeguards. Depending on the
+        system used, these may include access controls, secure
+        connections, restricted administrative access, software
+        updates and appropriate data-handling procedures.
+      </p>
+      <p>
+        No internet transmission or electronic storage method can
+        be guaranteed to be completely secure. We therefore cannot
+        promise absolute security, but we aim to reduce the risk of
+        unauthorised access, loss, misuse or disclosure.
+      </p>
+      <p>
+        Please keep your device and account credentials secure and
+        contact us if you believe your account or information has
+        been compromised.
+      </p>
+    </section>
+
+    <section id="retention">
+      <h2><span class="number">07.</span> Data Retention and Deletion</h2>
+      <p>
+        We retain personal information only for as long as reasonably
+        necessary to provide the relevant service, fulfil the purpose
+        for which it was collected, meet applicable legal obligations,
+        resolve disputes and protect our legitimate interests.
+      </p>
+
+      <h3>Requesting Account or Data Deletion</h3>
+      <p>
+        If the app supports account creation, users can request
+        deletion of their account and associated personal information
+        through the account deletion option in the app or through
+        the external deletion request facility provided by Janhit
+        Seva.
+      </p>
+      <p>
+        To make a request, contact our privacy team using the details
+        in the Contact Us section and include "Janhit Seva Account
+        Deletion Request" in your message. Include only the information
+        reasonably necessary to identify your account.
+      </p>
+      <p>
+        We will review and process valid requests within a reasonable
+        period and in accordance with applicable law. Information
+        that we are legally required or permitted to retain may be
+        kept for the relevant period, with access restricted where
+        appropriate.
+      </p>
+      <p>
+        Deleting an app from your device does not, by itself, delete
+        an account or information stored on our servers.
+      </p>
+      <div class="notice">
+        Important for publishing: if account creation is enabled,
+        implement a working in-app deletion flow and a publicly
+        accessible external deletion-request webpage. Replace this
+        general procedure with your actual process before publication.
+      </div>
+    </section>
+
+    <section id="rights">
+      <h2><span class="number">08.</span> Your Privacy Rights</h2>
+      <p>
+        Subject to applicable law, you may have the right to request
+        access to your personal information, correction of inaccurate
+        details, deletion of eligible information, withdrawal of
+        consent where processing relies on consent, or information
+        about how your data is handled.
+      </p>
+      <p>
+        You can contact us to exercise an applicable right. We may
+        need to verify your identity before acting on a request.
+        Certain requests may be limited where the law permits or
+        requires us to retain information.
+      </p>
+      <p>
+        You may also manage app permissions through your device
+        settings and disable notifications through the relevant
+        system controls.
+      </p>
+    </section>
+
+    <section id="children">
+      <h2><span class="number">09.</span> Children's Privacy</h2>
+      <p>
+        Janhit Seva is not intended to collect personal information
+        from children in violation of applicable law. Where a service
+        is intended for children or involves children's information,
+        appropriate safeguards, notices and parental consent will
+        be applied where legally required.
+      </p>
+      <p>
+        If you believe that a child has provided personal information
+        inappropriately, please contact us so that we can review
+        the situation and take appropriate action.
+      </p>
+    </section>
+
+    <section id="thirdparty">
+      <h2><span class="number">10.</span> Third-Party Services and Links</h2>
+      <p>
+        Our app or website may contain links to external websites
+        or integrate third-party services. These services may have
+        their own privacy policies and data practices.
+      </p>
+      <p>
+        We encourage you to review the privacy terms of any external
+        service before providing personal information. Our policy
+        applies to Janhit Seva services and does not automatically
+        govern independent third-party websites.
+      </p>
+      <p>
+        Where Google Firebase, Google Play Services, Apple services
+        or other SDKs are integrated, their actual data processing
+        must be reflected in our applicable disclosures and store
+        privacy declarations.
+      </p>
+    </section>
+
+    <section id="transfers">
+      <h2><span class="number">11.</span> International Data Transfers</h2>
+      <p>
+        Depending on the hosting infrastructure and third-party
+        providers actually used, information may be processed or
+        stored in locations outside your state or country.
+        Where applicable, we will follow legal requirements for
+        cross-border transfers and use appropriate safeguards.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="number">12.</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy to reflect changes in our
+        services, technology, legal obligations or data practices.
+        The latest version will be published on this page with its
+        revised effective date.
+      </p>
+      <p>
+        Where required, we will provide additional notice or obtain
+        consent before implementing material changes.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="number">13.</span> Contact Us</h2>
+      <p>
+        If you have questions about this Privacy Policy, wish to
+        exercise your privacy rights or want to request deletion
+        of your account or personal information, contact Janhit
+        Seva Sansthan.
+      </p>
+
+      <div class="contact-card">
+        <h3>Janhit Seva Sansthan</h3>
+        <p><strong>App Name:</strong> Janhit Seva</p>
+        <p><strong>Privacy Contact:</strong>
+          <a href="mailto:REPLACE_WITH_OFFICIAL_EMAIL">
+            REPLACE_WITH_OFFICIAL_EMAIL
+          </a>
+        </p>
+        <p>
+          <strong>Address:</strong>
+          REPLACE_WITH_OFFICIAL_ORGANISATION_ADDRESS
+        </p>
+        <p>
+          <strong>Website:</strong>
+          <a href="https://YOUR-DOMAIN.com">
+            https://YOUR-DOMAIN.com
+          </a>
+        </p>
+        <p>
+          Please replace the sample contact details above with
+          verified official details before publishing this page.
+        </p>
+      </div>
+    </section>
+
+    <p style="font-size:13px;color:#65748b">
+      This policy describes general privacy practices and is not
+      a substitute for legal advice. Ensure it accurately reflects
+      the live app, its permissions, server configuration and
+      third-party SDKs before submitting to an app store.
+    </p>
+
+    <a class="backtop" href="#top">↑ Back to top</a>
+
+  </main>
+</div>
+
+<footer>
+  <p><strong>Janhit Seva Sansthan</strong></p>
+  <p>Serving the community with transparency and responsibility.</p>
+  <p>© <span id="year">2026</span> Janhit Seva. All rights reserved.</p>
+  <p><a href="#top" style="color:#f1d99d">Privacy Policy</a></p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
