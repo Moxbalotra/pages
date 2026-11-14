@@ -4,448 +4,699 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#102c52">
+<meta name="theme-color" content="#123d32">
 
-<title>Child Safety Standards Policy | Janhit Seva</title>
-<meta name="description" content="Child Safety Standards Policy for the Janhit Seva application, including child protection, reporting, prohibited conduct and safety contact information.">
+<title>Child Safety Standards Policy | Janhit Seva Sansthan</title>
+
+<meta name="description" content="Official Child Safety Standards Policy of Janhit Seva Sansthan, including zero tolerance for child sexual abuse and exploitation, reporting and contact information.">
 
 <style>
 :root {
-  --navy: #102c52;
-  --blue: #2458a6;
-  --gold: #d9b45c;
-  --text: #27364b;
-  --muted: #64748b;
-  --bg: #f3f6fb;
-  --border: #e2e8f0;
+  --primary: #155c45;
+  --dark: #123d32;
+  --accent: #d6a84f;
+  --bg: #f4f7f5;
+  --text: #293b34;
+  --muted: #68776f;
+  --border: #e2e9e4;
+  --white: #ffffff;
 }
 
-* { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
   background: var(--bg);
-  line-height: 1.8;
+  color: var(--text);
+  line-height: 1.75;
 }
 
-a { color: #2458a6; overflow-wrap: anywhere; }
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
 
-.header {
-  background: var(--navy);
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(135deg, #123d32, #187653);
   color: white;
-  padding: 15px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  padding: 65px 20px;
+  text-align: center;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.logo {
-  height: 44px;
-  width: 44px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--gold);
-  border-radius: 12px;
-  color: var(--gold);
-  font-size: 19px;
-}
-
-.header small {
-  display: block;
-  color: #d5dfed;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  margin-top: 2px;
-}
-
-.hero {
-  background: linear-gradient(135deg, #102c52, #24558a);
-  color: white;
-  padding: 65px 24px 85px;
-}
-
-.hero-inner {
-  max-width: 950px;
+.header-inner {
+  max-width: 900px;
   margin: auto;
 }
 
-.label {
-  display: inline-block;
-  border: 1px solid #ffffff50;
-  color: #f4dda1;
-  padding: 5px 13px;
-  border-radius: 30px;
-  font-size: 12px;
-  letter-spacing: 1.2px;
+.brand {
+  color: #e8c77d;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.hero h1 {
-  font-size: clamp(32px, 5vw, 50px);
+header h1 {
+  font-size: clamp(27px, 5vw, 43px);
+  margin: 15px 0 12px;
   line-height: 1.2;
-  margin: 20px 0 14px;
 }
 
-.hero p {
-  max-width: 700px;
-  color: #e0e9f5;
+header p {
+  color: #e1eee7;
+  font-size: 15px;
 }
 
-.meta {
-  margin-top: 25px;
-  font-size: 13px;
-  color: #f0dba3;
+.shield {
+  font-size: 44px;
+  margin-bottom: 15px;
 }
 
-.wrapper {
-  max-width: 1100px;
-  margin: -35px auto 60px;
-  padding: 0 20px;
+.header-tag {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 7px 17px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
-.document {
+nav {
   background: white;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: clamp(22px, 5vw, 50px);
-  box-shadow: 0 10px 35px #102c520c;
+  border-bottom: 1px solid var(--border);
+  padding: 15px 20px;
 }
 
-.notice {
-  background: #f1f6ff;
-  border-left: 4px solid var(--blue);
-  border-radius: 5px;
-  padding: 17px 20px;
-  margin-bottom: 32px;
+.nav-inner {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 0 18px;
+}
+
+.intro {
+  background: white;
+  padding: 30px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  margin-bottom: 22px;
 }
 
 section {
-  padding: 10px 0 24px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid var(--border);
+  background: white;
+  padding: 28px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
   scroll-margin-top: 20px;
 }
 
-section:last-of-type { border-bottom: none; }
+.eyebrow {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
 
 h2 {
-  color: var(--navy);
+  color: var(--dark);
   font-size: 22px;
-  line-height: 1.45;
-  margin: 0 0 14px;
+  margin: 8px 0 14px;
 }
 
 h3 {
-  color: var(--navy);
+  color: var(--primary);
   font-size: 16px;
   margin: 20px 0 8px;
 }
 
-ul { padding-left: 24px; }
+p {
+  margin: 10px 0;
+}
 
-li { padding: 4px 0; }
+ul {
+  padding-left: 22px;
+  margin: 12px 0;
+}
 
-.contact {
-  background: var(--navy);
-  color: white;
-  border-radius: 14px;
-  padding: 25px;
+li {
+  margin-bottom: 9px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.meta span {
+  background: #edf4ef;
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.commitment {
+  background: #edf5f0;
+  border-left: 4px solid var(--primary);
+  padding: 17px;
+  border-radius: 6px;
+  margin: 17px 0;
+}
+
+.warning {
+  background: #fff8e9;
+  border-left: 4px solid var(--accent);
+  padding: 17px;
+  border-radius: 6px;
+  margin: 17px 0;
+}
+
+.contact-card {
+  background: #edf5f0;
+  padding: 22px;
+  border-radius: 10px;
   margin-top: 15px;
 }
 
-.contact h3 { color: var(--gold); margin-top: 0; }
-.contact p { margin: 8px 0; }
-.contact a { color: #f4dda1; }
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.contact-card p {
+  overflow-wrap: anywhere;
+}
+
+.contact-button {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 11px 20px;
+  border-radius: 6px;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background: var(--dark);
+  text-decoration: none;
+}
 
 footer {
-  background: #0b1e36;
-  color: #cbd5e1;
+  background: var(--dark);
+  color: #e3eee8;
   text-align: center;
-  padding: 28px 18px;
+  padding: 35px 15px;
   font-size: 13px;
 }
 
-footer strong { color: white; }
+footer p {
+  margin: 6px;
+}
+
+footer a {
+  color: #e8c77d;
+  font-weight: bold;
+}
+
+footer .footer-brand {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+footer .credit {
+  margin-top: 14px;
+  color: #b9d0c3;
+}
 
 @media(max-width: 600px) {
-  .hero { padding: 45px 20px 70px; }
-  .wrapper { padding: 0 12px; }
-  .document { padding: 23px 18px; }
-  .header { padding: 12px 18px; }
+  header {
+    padding: 45px 18px;
+  }
+
+  section, .intro {
+    padding: 21px;
+  }
+
+  .nav-inner {
+    gap: 13px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header class="header">
-  <div class="brand">
-    <div class="logo">JS</div>
-    <div>
-      Janhit Seva
-      <small>JANHIT SEVA SANSTHAN</small>
+<header>
+  <div class="header-inner">
+
+    <div class="shield">🛡️</div>
+
+    <div class="brand">Janhit Seva Sansthan</div>
+
+    <h1>Child Safety Standards Policy</h1>
+
+    <p>
+      Protecting Children. Promoting Safety.
+      Building a Responsible Digital Community.
+    </p>
+
+    <div class="header-tag">
+      CHILD PROTECTION & ONLINE SAFETY
     </div>
+
   </div>
-  <span>Safety & Protection</span>
 </header>
 
-<div class="hero">
-  <div class="hero-inner">
-    <span class="label">Safety Standards</span>
-    <h1>Child Safety Standards Policy</h1>
-    <p>
-      Janhit Seva is committed to maintaining a safe and respectful
-      digital environment and to protecting children from
-      exploitation, abuse and harmful activities.
-    </p>
-    <div class="meta">
-      Effective Date: 13 October 2026
-    </div>
+<nav>
+  <div class="nav-inner">
+    <a href="#overview">Overview</a>
+    <a href="#commitment">Our Commitment</a>
+    <a href="#prohibited">Prohibited Activities</a>
+    <a href="#reporting">Reporting</a>
+    <a href="#contact">Contact</a>
   </div>
-</div>
+</nav>
 
-<div class="wrapper">
-<main class="document">
+<main class="container">
 
-<div class="notice">
-  <strong>Our Commitment</strong>
-  <p>
-    Child safety is a serious responsibility. We do not tolerate
-    child sexual abuse and exploitation (CSAE), child sexual abuse
-    material (CSAM), grooming, or any conduct that sexually
-    exploits or endangers children.
-  </p>
-</div>
+  <div class="intro" id="overview">
 
-<section id="purpose">
-  <h2>1. Purpose and Scope</h2>
-  <p>
-    This Child Safety Standards Policy applies to the Janhit Seva
-    mobile application and related services operated by Janhit
-    Seva Sansthan, to the extent applicable to their features.
-  </p>
-  <p>
-    This policy describes our child-safety commitments, prohibited
-    conduct, reporting process and approach to responding to
-    credible child-safety concerns.
-  </p>
-</section>
+    <div class="eyebrow">Official Policy</div>
 
-<section id="zero-tolerance">
-  <h2>2. Zero Tolerance for Child Sexual Abuse and Exploitation</h2>
-  <p>
-    Janhit Seva prohibits the use of its services to facilitate,
-    promote, distribute or engage in child sexual abuse or
-    exploitation.
-  </p>
-  <p>Prohibited conduct includes, but is not limited to:</p>
-  <ul>
-    <li>Creating, uploading, requesting or distributing child sexual abuse material.</li>
-    <li>Sexual exploitation of children in any form.</li>
-    <li>Grooming, solicitation or sexual harassment of minors.</li>
-    <li>Using the platform to arrange or facilitate the abuse of a child.</li>
-    <li>Threatening, coercing or exploiting children through digital communications.</li>
-    <li>Sharing content or information intended to facilitate child abuse or exploitation.</li>
-  </ul>
-  <p>
-    Violations may result in content removal, restriction or
-    termination of access, preservation of relevant information
-    where lawful, and reporting to appropriate authorities where
-    required by law.
-  </p>
-</section>
+    <h2>Child Safety Standards</h2>
 
-<section id="prevention">
-  <h2>3. Child Safety Prevention Measures</h2>
-  <p>
-    We aim to implement appropriate safeguards according to the
-    features and risks of our application. These measures may include:
-  </p>
-  <ul>
-    <li>Providing a channel for users to report child-safety concerns.</li>
-    <li>Reviewing credible reports and taking appropriate action.</li>
-    <li>Restricting accounts or removing prohibited content when warranted.</li>
-    <li>Limiting access to personal information to authorised personnel.</li>
-    <li>Cooperating with lawful requests from competent authorities.</li>
-    <li>Reviewing relevant safety procedures as our services evolve.</li>
-  </ul>
-  <p>
-    The measures implemented in practice will depend on the
-    application's actual features, technical capabilities and
-    applicable legal obligations.
-  </p>
-</section>
-
-<section id="reporting">
-  <h2>4. Reporting Child Safety Concerns</h2>
-  <p>
-    Users, parents, guardians and other concerned individuals can
-    report suspected child exploitation, grooming, abusive content
-    or other child-safety violations using the contact details
-    provided below.
-  </p>
-  <p>When submitting a report, please provide, where safe and appropriate:</p>
-  <ul>
-    <li>A brief description of the concern.</li>
-    <li>The relevant account name, profile or publicly accessible content link, if available.</li>
-    <li>The date and general circumstances of the incident.</li>
-    <li>Your contact details if you would like a response.</li>
-  </ul>
-  <p>
-    Do not download, copy, forward or attach suspected child sexual
-    abuse material to a report. Provide identifying information or
-    links only where lawful and safe to do so.
-  </p>
-  <p>
-    We will review reports as appropriate, prioritise credible
-    urgent concerns, and take suitable action based on the
-    information available.
-  </p>
-</section>
-
-<section id="response">
-  <h2>5. Handling Reports and Enforcement</h2>
-  <p>
-    Where a report raises a credible safety concern, we may take
-    steps appropriate to the circumstances, including:
-  </p>
-  <ul>
-    <li>Reviewing the report and relevant available information.</li>
-    <li>Removing or restricting access to violating content where applicable.</li>
-    <li>Suspending or terminating accounts involved in serious violations.</li>
-    <li>Taking steps to prevent further misuse of our services.</li>
-    <li>Escalating matters to law enforcement or child-protection authorities where required or appropriate.</li>
-  </ul>
-  <p>
-    We will handle reports with appropriate discretion and limit
-    access to sensitive information to authorised persons.
-  </p>
-</section>
-
-<section id="authorities">
-  <h2>6. Cooperation with Authorities</h2>
-  <p>
-    Janhit Seva will respond to valid legal requests and cooperate
-    with competent law-enforcement and child-protection authorities
-    as required by applicable law.
-  </p>
-  <p>
-    In India, suspected child sexual abuse or exploitation may be
-    reported to the appropriate law-enforcement agency or
-    competent child-protection authority. In an immediate
-    emergency, contact local emergency services.
-  </p>
-</section>
-
-<section id="privacy">
-  <h2>7. Child Privacy and Personal Information</h2>
-  <p>
-    We aim to handle personal information in accordance with
-    applicable data-protection and child-protection laws.
-    Information submitted in a safety report will be used to
-    assess, investigate and respond to the concern, meet legal
-    obligations, and protect users where appropriate.
-  </p>
-  <p>
-    We take reasonable steps to prevent unauthorised access to
-    sensitive reports. Information may be disclosed to competent
-    authorities or other relevant parties when legally required
-    or otherwise lawfully appropriate.
-  </p>
-  <p>
-    For more information about the collection, use, storage and
-    deletion of personal information, please refer to the Janhit
-    Seva Privacy Policy published on our official website.
-  </p>
-</section>
-
-<section id="education">
-  <h2>8. Awareness and Responsible Use</h2>
-  <p>
-    Users must use Janhit Seva responsibly and must not use the
-    platform to threaten, exploit, harass or endanger children.
-    We encourage parents, guardians and caregivers to help children
-    use digital services safely and to report suspected abuse
-    to the appropriate authorities.
-  </p>
-</section>
-
-<section id="updates">
-  <h2>9. Policy Updates</h2>
-  <p>
-    We may update this policy to reflect changes in our services,
-    safety practices, technical capabilities or applicable law.
-    The latest version will be published on this page along with
-    its effective date.
-  </p>
-</section>
-
-<section id="contact">
-  <h2>10. Child Safety Contact</h2>
-  <p>
-    For child-safety reports, policy questions or concerns about
-    the implementation of these standards, contact the organisation
-    responsible for the application.
-  </p>
-
-  <div class="contact">
-    <h3>MORIHIX PRIVATE LIMITED</h3>
-    <p><strong>Application:</strong> Janhit Seva</p>
-    <p><strong>Website:</strong>
-      <a href="https://morihix.com">https://morihix.com</a>
+    <p>
+      Janhit Seva Sansthan is committed to maintaining
+      a safe and responsible digital environment.
+      We take child protection seriously and do not
+      tolerate any form of Child Sexual Abuse and
+      Exploitation (CSAE).
     </p>
-    <p><strong>Email:</strong>
-      <a href="mailto:REPLACE_WITH_OFFICIAL_EMAIL">
-        info@morihix.com
+
+    <div class="meta">
+      <span>Effective Date: 14 November 2026</span>
+      <span>Organisation: Janhit Seva Sansthan</span>
+      <span>Location: India</span>
+    </div>
+
+  </div>
+
+  <section id="commitment">
+
+    <div class="eyebrow">01 / Our Commitment</div>
+
+    <h2>Zero Tolerance for Child Sexual Abuse and Exploitation</h2>
+
+    <p>
+      Janhit Seva Sansthan maintains a zero-tolerance
+      approach towards Child Sexual Abuse and Exploitation
+      (CSAE) and Child Sexual Abuse Material (CSAM).
+    </p>
+
+    <div class="commitment">
+      <strong>Our Commitment:</strong>
+      We prohibit the use of our application and
+      associated services for any activity that
+      exploits, abuses or endangers children.
+    </div>
+
+    <p>
+      We aim to promote a safe digital environment
+      through appropriate policies, reporting procedures
+      and responsible handling of child safety concerns.
+    </p>
+
+  </section>
+
+  <section id="prohibited">
+
+    <div class="eyebrow">02 / Prohibited Activities</div>
+
+    <h2>Activities Strictly Prohibited</h2>
+
+    <p>
+      The following activities are strictly prohibited
+      on the Janhit Seva platform and in connection
+      with its services:
+    </p>
+
+    <ul>
+      <li>
+        Creating, uploading, sharing or distributing
+        Child Sexual Abuse Material (CSAM).
+      </li>
+
+      <li>
+        Sexual exploitation or abuse of children.
+      </li>
+
+      <li>
+        Grooming or attempting to groom a minor.
+      </li>
+
+      <li>
+        Sexualisation of children.
+      </li>
+
+      <li>
+        Sextortion or threats involving minors.
+      </li>
+
+      <li>
+        Trafficking or solicitation of children
+        for sexual exploitation.
+      </li>
+
+      <li>
+        Encouraging, facilitating or promoting
+        any form of child abuse.
+      </li>
+    </ul>
+
+    <p>
+      Any violation may result in appropriate
+      action, including content removal, account
+      suspension or termination where applicable,
+      and reporting to relevant authorities.
+    </p>
+
+  </section>
+
+  <section>
+
+    <div class="eyebrow">03 / User Responsibilities</div>
+
+    <h2>Responsible Use of the Platform</h2>
+
+    <p>
+      Users are expected to use the Janhit Seva
+      application responsibly and comply with
+      applicable laws and these Child Safety Standards.
+    </p>
+
+    <ul>
+      <li>
+        Do not upload or share content that exploits
+        or endangers children.
+      </li>
+
+      <li>
+        Report suspected child safety violations.
+      </li>
+
+      <li>
+        Do not use the platform to contact or
+        exploit minors for inappropriate purposes.
+      </li>
+
+      <li>
+        Cooperate with legitimate safety reviews
+        and investigations.
+      </li>
+    </ul>
+
+  </section>
+
+  <section id="reporting">
+
+    <div class="eyebrow">04 / Reporting Mechanism</div>
+
+    <h2>How to Report a Child Safety Concern</h2>
+
+    <p>
+      We encourage users to report suspected child
+      abuse, exploitation, inappropriate content
+      or any child safety concern associated with
+      the Janhit Seva application.
+    </p>
+
+    <h3>Reporting Options</h3>
+
+    <ul>
+      <li>
+        Use the in-app Report, Help or Contact
+        facility, where available.
+      </li>
+
+      <li>
+        Send a report to our designated Child Safety
+        Point of Contact using the email address
+        provided on this page.
+      </li>
+
+      <li>
+        Include relevant details about the concern.
+        Do not download, forward or redistribute
+        suspected illegal material.
+      </li>
+    </ul>
+
+    <div class="warning">
+      <strong>Important:</strong>
+      Reports involving suspected CSAM or child
+      exploitation will be treated seriously and
+      reviewed in accordance with applicable laws.
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="eyebrow">05 / Review & Action</div>
+
+    <h2>Handling of Child Safety Reports</h2>
+
+    <p>
+      When Janhit Seva Sansthan obtains actual
+      knowledge of suspected CSAM or child exploitation
+      connected with its services, appropriate action
+      will be taken in accordance with applicable
+      laws and organisational procedures.
+    </p>
+
+    <p>Such action may include:</p>
+
+    <ul>
+      <li>Reviewing reported safety concerns.</li>
+      <li>Removing or restricting prohibited content.</li>
+      <li>Restricting or terminating violating accounts, where applicable.</li>
+      <li>Preserving relevant information where legally required.</li>
+      <li>Reporting confirmed CSAM to appropriate authorities.</li>
+      <li>Cooperating with lawful investigations.</li>
+    </ul>
+
+  </section>
+
+  <section>
+
+    <div class="eyebrow">06 / Legal Compliance</div>
+
+    <h2>Compliance with Applicable Laws</h2>
+
+    <p>
+      Janhit Seva Sansthan aims to comply with
+      applicable child protection, online safety
+      and digital platform regulations.
+    </p>
+
+    <p>
+      This includes relevant laws in India and
+      other jurisdictions where the application
+      is made available.
+    </p>
+
+    <p>
+      Where required by law, suspected or confirmed
+      child exploitation incidents will be reported
+      to appropriate authorities.
+    </p>
+
+  </section>
+
+  <section>
+
+    <div class="eyebrow">07 / Privacy & Protection</div>
+
+    <h2>Privacy and Confidentiality</h2>
+
+    <p>
+      Child safety reports and related information
+      will be handled with appropriate confidentiality
+      and access restrictions.
+    </p>
+
+    <p>
+      Personal information associated with reports
+      will be processed in accordance with applicable
+      privacy laws and our Privacy Policy.
+    </p>
+
+    <p>
+      For further information about data collection,
+      use, retention and deletion, please refer to
+      our Privacy Policy.
+    </p>
+
+    <p>
+      <a href="https://moxbalotra.github.io/pages/janhit-privacy-policy.html"
+         target="_blank"
+         rel="noopener noreferrer">
+        View Privacy Policy →
       </a>
     </p>
-    <p><strong>Phone:</strong>
-      +919414147700
-    </p>
-    <p><strong>Business Address:</strong>
-     balotra
-    </p>
-    <p>
-      
-    </p>
-  </div>
-</section>
 
-<p style="font-size:13px;color:#64748b">
-  This policy sets out intended standards and procedures. It should
-  be reviewed against the app's actual features and operational
-  processes before publication. Publishing this page alone does
-  not establish compliance with every applicable law or app-store
-  requirement.
-</p>
+  </section>
+
+  <section id="contact">
+
+    <div class="eyebrow">08 / Official Contact</div>
+
+    <h2>Child Safety Point of Contact</h2>
+
+    <p>
+      Janhit Seva Sansthan designates a responsible
+      representative to receive communications
+      concerning Child Sexual Abuse and Exploitation,
+      Child Sexual Abuse Material and compliance
+      with child safety standards.
+    </p>
+
+    <div class="contact-card">
+
+      <h3>Janhit Seva Sansthan</h3>
+
+      <p>
+        <strong>Designated Representative:</strong><br>
+        Mox Rathore
+      </p>
+
+      <p>
+        <strong>Email Address:</strong><br>
+        <a href="mailto:info@morihix.com">
+          info@morihix.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Location:</strong><br>
+        Balotra, Rajasthan, India
+      </p>
+
+      <a class="contact-button"
+         href="mailto:info@morihix.com?subject=Child%20Safety%20Report%20-%20Janhit%20Seva">
+        Report a Child Safety Concern
+      </a>
+
+    </div>
+
+    <p>
+      The designated representative is responsible
+      for receiving reports, coordinating appropriate
+      reviews and taking action in accordance with
+      applicable laws and organisational procedures.
+    </p>
+
+  </section>
+
+  <section>
+
+    <div class="eyebrow">09 / Policy Updates</div>
+
+    <h2>Changes to This Policy</h2>
+
+    <p>
+      We may update these Child Safety Standards
+      to reflect changes in applicable laws,
+      Google Play requirements, technology or
+      organisational procedures.
+    </p>
+
+    <p>
+      The latest version will remain publicly
+      accessible on this page.
+    </p>
+
+  </section>
+
+  <section>
+
+    <div class="eyebrow">Our Promise</div>
+
+    <h2>Building a Safer Digital Environment</h2>
+
+    <p>
+      Protecting children is a shared responsibility.
+      Janhit Seva Sansthan is committed to maintaining
+      appropriate child safety standards and addressing
+      concerns through responsible procedures.
+    </p>
+
+    <div class="commitment">
+      <strong>Janhit Seva Sansthan</strong><br>
+      Committed to Safety, Responsibility
+      and Social Welfare.
+    </div>
+
+  </section>
 
 </main>
-</div>
 
 <footer>
-  <p><strong>MORIHIX PRIVATE LIMITED</strong></p>
-  <p>Application: Janhit Seva</p>
-  <p>© <span id="year">2026</span> All rights reserved.</p>
-</footer>
 
-<script>
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-</script>
+  <p class="footer-brand">JANHIT SEVA SANSTHAN</p>
+
+  <p>Child Safety Standards Policy</p>
+
+  <p>
+    Effective Date: 14 November 2026
+  </p>
+
+  <p class="credit">
+    Powered by
+    <a href="https://morihix.com"
+       target="_blank"
+       rel="noopener noreferrer">Morihix</a>
+  </p>
+
+  <p>
+    Designed & Developed by
+    <a href="https://morihix.com"
+       target="_blank"
+       rel="noopener noreferrer">Morihix</a>
+  </p>
+
+  <p style="margin-top:15px;color:#a9c2b5;">
+    © 2026 Janhit Seva Sansthan. All Rights Reserved.
+  </p>
+
+</footer>
 
 </body>
 </html>
